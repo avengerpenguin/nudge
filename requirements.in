@@ -1,0 +1,7 @@
+django
+django-zappa
+clize
+pytest
+pytest-cov
+pytest-xdist
+pytest-django
