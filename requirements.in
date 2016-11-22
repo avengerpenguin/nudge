@@ -5,3 +5,6 @@ pytest
 pytest-cov
 pytest-xdist
 pytest-django
+laconia
+hyperspace
+httpretty

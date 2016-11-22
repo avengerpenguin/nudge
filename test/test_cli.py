@@ -16,7 +16,5 @@ def command():
 
 def test_help(command):
     out, err = command('nudge --help')
-    print out
-    print err
     assert not err
     assert 'nudge' in out
