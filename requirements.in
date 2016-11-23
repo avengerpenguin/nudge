@@ -6,5 +6,6 @@ pytest-cov
 pytest-xdist
 pytest-django
 laconia
-hyperspace
+-e ../hyperspace
 httpretty
+rdflib

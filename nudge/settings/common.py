@@ -3,8 +3,6 @@ import os.path
 
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), '..', '..')
-print(BASE_DIR)
-print(os.path.join(BASE_DIR, 'nudge', 'settings/' 'test.py'))
 
 
 SECRET_KEY=os.urandom(32)
@@ -23,4 +21,13 @@ ZAPPA_SETTINGS = {
 
 INSTALLED_APPS = [
     'django_zappa',
+]
+
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'nudge', 'templates')],
+    },
 ]
