@@ -9,7 +9,9 @@ from rdflib import Graph, URIRef
 
 def post2graph(url, params):
     data = Graph()
-    data.parse(format="json-ld", data=json.dumps({"@context": {"@vocab": url + "#"}}))
+    data.parse(
+        format="json-ld", data=json.dumps({"@context": {"@vocab": url + "#"}})
+    )
     return data
 
 

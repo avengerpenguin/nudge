@@ -39,7 +39,9 @@ def mock_requests_to_use_flask_test_client(request, client):
         return int(r.status_code), response_headers, r.content
 
     httpretty.register_uri(httpretty.GET, re.compile(".*"), body=get_callback)
-    httpretty.register_uri(httpretty.POST, re.compile(".*"), body=post_callback)
+    httpretty.register_uri(
+        httpretty.POST, re.compile(".*"), body=post_callback
+    )
     httpretty.enable()
 
     request.addfinalizer(httpretty.disable)
