@@ -10,7 +10,13 @@ from nudge import cli
 def command():
     def runner(command_string):
         out, err = StringIO(), StringIO()
-        run(cli, args=tuple(command_string.split()), out=out, err=err, exit=False)
+        run(
+            cli,
+            args=tuple(command_string.split()),
+            out=out,
+            err=err,
+            exit=False,
+        )
         return out.getvalue(), err.getvalue()
 
     return runner
