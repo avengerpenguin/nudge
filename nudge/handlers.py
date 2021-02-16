@@ -8,5 +8,5 @@ def dashboard(data=None):
 
 
 def collect(data=None):
-    new_stuff = models.Stuff()
-    models.User('foo').stuff.add()
+    models.Stuff()
+    models.User("foo").stuff.add()
