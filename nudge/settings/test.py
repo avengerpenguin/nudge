@@ -13,7 +13,9 @@ ZAPPA_SETTINGS = {
         "project_name": "hello",
         "aws_region": "eu-west-1",
         "s3_bucket": "template-zappa-hello",
-        "settings_file": os.path.join(BASE_DIR, "hello", "settings/" "test.py"),
+        "settings_file": os.path.join(
+            BASE_DIR, "hello", "settings/" "test.py"
+        ),
     },
 }
 
